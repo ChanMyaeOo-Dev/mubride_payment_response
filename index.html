@@ -58,7 +58,7 @@
 
     <div class="container-fluid bg-light main_container">
         <div class="row min-vh-100 justify-content-center">
-            <div class="col-12 col-md-4 card border-0 shadow rounded-2">
+            <div class="col-12 col-md-4 card border-0 shadow rounded-2 bg-white">
                 <div class="card-body px-4 pt-5 pb-4 text-center">
                     <img class="img_success" src="payment_success.svg">
                     <p class="text-secondary fs-4 mt-3 mb-2">Payment Successful</p>
@@ -76,7 +76,7 @@
 
 <script>
     let headBarHeight = document.querySelector(".head_bar").offsetHeight;
-    document.querySelector(".main_container").style.marginTop = (headBarHeight - 65) + "px";
+    document.querySelector(".main_container").style.marginTop = (headBarHeight +20) + "px";
 </script>
 
 </html>
