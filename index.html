@@ -35,6 +35,12 @@
             color: #333333 !important;
             border: none !important;
         }
+
+        @media only screen and (max-width:640px) {
+            .show_card {
+                margin-top: 64px!important;
+            }
+        }
     </style>
 </head>
 
@@ -65,8 +71,8 @@
 
     <div class="container-fluid bg-light main_container">
         <div class="row min-vh-100 align-items-start align-items-md-center justify-content-center">
-            <div class="col-12 col-md-4 mt-5 mt-md-0">
-                <div class="card border-0 shadow rounded-2 bg-white">
+            <div class="col-12 col-md-4">
+                <div class="show_card card border-0 shadow rounded-2 bg-white">
                     <div class="card-body px-4 pt-5 pb-4 text-center">
                         <img class="img_success" src="payment_success.svg">
                         <p class="text-secondary fs-4 mt-3 mb-2">Payment Successful</p>
@@ -85,7 +91,7 @@
 
 <script>
     let headBarHeight = document.querySelector(".head_bar").offsetHeight;
-    document.querySelector(".main_container").style.marginTop = (headBarHeight - 36) + "px";
+    document.querySelector(".main_container").style.marginTop = (headBarHeight - 48) + "px";
 </script>
 
 </html>
